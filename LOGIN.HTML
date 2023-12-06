@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mundo Verde</title>
+        <link rel="stylesheet" href="estilos.css"> 
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+    
+            header {
+                background-color: #4CAF50;
+                padding: 10px;
+                display: flex;
+                justify-content: space-around;
+            }
+    
+            header a {
+                color: white;
+                text-decoration: none;
+            }
+    
+            main {
+                padding: 20px;
+            }
+    
+            h1, h2 {
+                text-align: center;
+            }
+    
+            .alineacionimg {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+    
+            .alineacionimg img {
+                width: 200px;
+                height: 150px;
+                margin-right: 10px;
+            }
+    
+            footer {
+                background-color: #f0f0f0;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            footer a {
+                margin: 0 10px;
+            }
+    
+            footer img {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    
+<body>
+    <header>
+        <a href="index.html">INICIO</a>            
+        <a href="Productos.html">PRODUCTOS</a>
+        <a href="CONTACTO.HTML">CONTACTANOS</a>            
+        <a href="LOGIN.HTML">LOGIN</a>
+    </header>
+
+    <main>
+        <h2>Inicia sesión</h2>
+        <form action="auth.php" method="post">
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario"><br>
+            <label for="clave">Contraseña:</label><br>
+            <input type="password" id="clave" name="clave"><br><br>
+            <input type="submit" value="Iniciar sesión">
+        </form>
+    </main>
+</body>
+</html>
